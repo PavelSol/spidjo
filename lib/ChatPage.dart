@@ -144,7 +144,7 @@ class _ChatPage extends State<ChatPage> {
                       style: const ButtonStyle(
                           backgroundColor:
                               MaterialStatePropertyAll(Colors.blueGrey),
-                          minimumSize: MaterialStatePropertyAll(Size(40, 80))),
+                          minimumSize: MaterialStatePropertyAll(Size(30, 50))),
                       icon: const Icon(
                         Icons.arrow_circle_left,
                         color: Colors.white,
@@ -152,7 +152,7 @@ class _ChatPage extends State<ChatPage> {
                       ),
                       label: const Text(
                         "Left",
-                        style: TextStyle(color: Colors.white),
+                        style: TextStyle(fontSize: 10, color: Colors.white),
                       ),
                     ),
                   ],
@@ -167,7 +167,7 @@ class _ChatPage extends State<ChatPage> {
                       style: const ButtonStyle(
                           backgroundColor:
                               MaterialStatePropertyAll(Colors.blueGrey),
-                          minimumSize: MaterialStatePropertyAll(Size(40, 80))),
+                          minimumSize: MaterialStatePropertyAll(Size(30, 50))),
                       icon: const Icon(
                         Icons.arrow_circle_up,
                         color: Colors.white,
@@ -175,7 +175,7 @@ class _ChatPage extends State<ChatPage> {
                       ),
                       label: const Text(
                         "Forward",
-                        style: TextStyle(color: Colors.white),
+                        style: TextStyle(fontSize: 10, color: Colors.white),
                       ),
                     ),
                     ElevatedButton.icon(
@@ -185,7 +185,7 @@ class _ChatPage extends State<ChatPage> {
                       style: const ButtonStyle(
                           backgroundColor:
                               MaterialStatePropertyAll(Colors.blueGrey),
-                          minimumSize: MaterialStatePropertyAll(Size(40, 80))),
+                          minimumSize: MaterialStatePropertyAll(Size(30, 50))),
                       icon: const Icon(
                         Icons.arrow_circle_down,
                         color: Colors.white,
@@ -193,7 +193,7 @@ class _ChatPage extends State<ChatPage> {
                       ),
                       label: const Text(
                         "Backward",
-                        style: TextStyle(color: Colors.white),
+                        style: TextStyle(fontSize: 10, color: Colors.white),
                       ),
                     ),
                   ],
@@ -208,7 +208,7 @@ class _ChatPage extends State<ChatPage> {
                       style: const ButtonStyle(
                           backgroundColor:
                               MaterialStatePropertyAll(Colors.blueGrey),
-                          minimumSize: MaterialStatePropertyAll(Size(40, 80))),
+                          minimumSize: MaterialStatePropertyAll(Size(30, 50))),
                       icon: const Icon(
                         Icons.arrow_circle_right,
                         color: Colors.white,
@@ -216,9 +216,20 @@ class _ChatPage extends State<ChatPage> {
                       ),
                       label: const Text(
                         "Right",
-                        style: TextStyle(color: Colors.white),
+                        style: TextStyle(fontSize: 10, color: Colors.white),
                       ),
                     ),
+                  ],
+                ),
+                Column(
+                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  children: [
+                    Text("Расстояние до объекта"),
+                    Text("              "),
+                    Text("Показания датчика MQ-9"),
+                    Text("     "),
+                    Text("Показания датчика MQ-135"),
+                    Text(" ")
                   ],
                 ),
                 Column(
@@ -231,11 +242,11 @@ class _ChatPage extends State<ChatPage> {
                         style: const ButtonStyle(
                           backgroundColor:
                               MaterialStatePropertyAll<Color>(Colors.blueGrey),
-                          minimumSize: MaterialStatePropertyAll(Size(40, 80)),
+                          minimumSize: MaterialStatePropertyAll(Size(30, 50)),
                         ),
                         child: const Text(
                           "Stand",
-                          style: TextStyle(color: Colors.white, fontSize: 15),
+                          style: TextStyle(color: Colors.white, fontSize: 10),
                         )),
                     ElevatedButton(
                       onPressed: () {
@@ -244,11 +255,11 @@ class _ChatPage extends State<ChatPage> {
                       style: const ButtonStyle(
                         backgroundColor:
                             MaterialStatePropertyAll<Color>(Colors.blueGrey),
-                        minimumSize: MaterialStatePropertyAll(Size(40, 80)),
+                        minimumSize: MaterialStatePropertyAll(Size(30, 50)),
                       ),
                       child: const Text(
                         "Sit",
-                        style: TextStyle(color: Colors.white, fontSize: 15),
+                        style: TextStyle(color: Colors.white, fontSize: 10),
                       ),
                     )
                   ],
@@ -263,11 +274,11 @@ class _ChatPage extends State<ChatPage> {
                       style: const ButtonStyle(
                         backgroundColor:
                             MaterialStatePropertyAll<Color>(Colors.blueGrey),
-                        minimumSize: MaterialStatePropertyAll(Size(40, 80)),
+                        minimumSize: MaterialStatePropertyAll(Size(30, 50)),
                       ),
                       child: const Text(
                         "Dance",
-                        style: TextStyle(color: Colors.white, fontSize: 15),
+                        style: TextStyle(color: Colors.white, fontSize: 10),
                       ),
                     )
                   ],
@@ -282,11 +293,11 @@ class _ChatPage extends State<ChatPage> {
                       style: const ButtonStyle(
                         backgroundColor:
                             MaterialStatePropertyAll<Color>(Colors.blueGrey),
-                        minimumSize: MaterialStatePropertyAll(Size(40, 80)),
+                        minimumSize: MaterialStatePropertyAll(Size(30, 50)),
                       ),
                       child: const Text(
                         "Shake",
-                        style: TextStyle(color: Colors.white, fontSize: 15),
+                        style: TextStyle(color: Colors.white, fontSize: 10),
                       ),
                     ),
                     ElevatedButton(
@@ -296,36 +307,16 @@ class _ChatPage extends State<ChatPage> {
                         style: const ButtonStyle(
                           backgroundColor:
                               MaterialStatePropertyAll<Color>(Colors.blueGrey),
-                          minimumSize: MaterialStatePropertyAll(Size(40, 80)),
+                          minimumSize: MaterialStatePropertyAll(Size(30, 50)),
                         ),
                         child: const Text(
                           "Wave",
-                          style: TextStyle(color: Colors.white, fontSize: 15),
+                          style: TextStyle(color: Colors.white, fontSize: 10),
                         )),
                   ],
                 ),
               ],
             ),
-            const Column(
-              mainAxisAlignment: MainAxisAlignment.start,
-              children: [
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    /*ElevatedButton(
-                      onPressed: () {
-                        Navigator.of(context).push(
-                          MaterialPageRoute(
-                          builder: (context) => Ultrasonic(),
-                          ),
-                        );
-                      },
-                      child: const Text("Ultrasonic"),
-                    ),*/
-                  ],
-                )
-              ],
-            )
           ],
         ),
       ),

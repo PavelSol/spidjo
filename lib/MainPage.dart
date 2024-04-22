@@ -138,7 +138,7 @@ class _MainPage extends State<MainPage> {
                   ? const Text("Discoverable")
                   : Text(
                       "Discoverable for ${_discoverableTimeoutSecondsLeft}s"),
-              subtitle: const Text("PsychoX-Luna"),
+              subtitle: const Text("Spider-robot"),
               trailing: Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
